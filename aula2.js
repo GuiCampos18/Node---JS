@@ -7,4 +7,5 @@ http.createServer(function (req, res){
     var q = url.parse(req.url, true).query;
     var txt = "<br>dia: "+q.dia+" <br> mes: "+q.mes+" <br> ano: "+q.ano;
     res.end(txt);
+    
 }).listen(3000);
